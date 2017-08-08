@@ -1,0 +1,13 @@
+h4, md-icon, button{
+    display: inline-block;
+}
+
+li{
+    width: 50%;
+    margin:0px auto 0px auto;
+}
+
+ul > :hover{
+    background-color: #b2f1ef;
+    cursor: pointer;
+}

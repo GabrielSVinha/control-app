@@ -1,0 +1,11 @@
+<app-navbar></app-navbar>
+<ul class="list-group">
+  <li *ngFor="let taxi of taxis" class="list-group-item dropdown">
+    <div class="name" (click)="showCard(taxi)">
+      <md-icon>local_taxi</md-icon>
+      <h4 class="list-group-item-heading">{{taxi.name}}</h4>
+      <button class="btn pull-right" (click)="approve(taxi)">Aprovar</button>
+    </div>
+    <app-taxi-card [taxi]="taxi"></app-taxi-card>
+  </li>
+</ul>
